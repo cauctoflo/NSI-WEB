@@ -6,38 +6,42 @@ $jsonFileManager = new JsonFileManager($file_path);
 
 // Vérifie si le formulaire a été soumis
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Récupère tous les noms d'utilisateurs
-    $player_names = $jsonFileManager->getPlayerNames();
+    if ($_POST['password'] == '911gt3rs') {
+        // Récupère tous les noms d'utilisateurs
+        $player_names = $jsonFileManager->getPlayerNames();
 
-    // Vérifie si l'utilisateur est déjà enregistré
-    $is_user_registered = in_array($_POST['username'], $player_names);
+        // Vérifie si l'utilisateur est déjà enregistré
+        $is_user_registered = in_array($_POST['username'], $player_names);
 
-    if ($is_user_registered) {
-        ?>
-        <div class="alert alert-danger" role="alert">
-            Utilisateur déjà enregistré !
-        </div>
-        <?php
+        if ($is_user_registered) {
+            ?>
+            <div class="alert alert-danger" role="alert">
+                Utilisateur déjà enregistré !
+            </div>
+            <?php
+        } else {
+            // Crée les données de l'utilisateur
+            $data = array(
+                'name' => $_POST['username'],
+                'score' => 0,
+                'date' => date('Y-m-d')
+            );
+
+            // Ajoute l'utilisateur au fichier JSON
+            $players_data = $jsonFileManager->read();
+            $players_data[] = $data; // Ajoute le nouvel utilisateur à la fin du tableau existant
+            $jsonFileManager->write($players_data);
+            session_start();
+            $_SESSION['Login'] = true;
+            $_SESSION['User'] = $_POST['username'];
+            $_SESSION['Points'] = 0;
+
+            // Redirige l'utilisateur vers la page quiz_main.php
+            header('Location: quiz_main.php');
+            exit(); // Assurez-vous d'arrêter l'exécution du script après la redirection
+        }
     } else {
-        // Crée les données de l'utilisateur
-        $data = array(
-            'name' => $_POST['username'],
-            'score' => 0,
-            'date' => date('Y-m-d')
-        );
-
-        // Ajoute l'utilisateur au fichier JSON
-        $players_data = $jsonFileManager->read();
-        $players_data[] = $data; // Ajoute le nouvel utilisateur à la fin du tableau existant
-        $jsonFileManager->write($players_data);
-        session_start();
-        $_SESSION['Login'] = true;
-        $_SESSION['User'] = $_POST['username'];
-        $_SESSION['Points'] = 0;
-
-        // Redirige l'utilisateur vers la page quiz_main.php
-        header('Location: quiz_main.php');
-        exit(); // Assurez-vous d'arrêter l'exécution du script après la redirection
+        echo '<div class="alert alert-danger" role="alert">Mauvais mots de passe</div>';
     }
 
 }
@@ -59,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="container">
     <div class="form-container">
         <div class="text-center">
-            <img src="/images/logoporsche.png" width="100px" alt="">
+            <img src="images/logoporsche.png" width="100px" alt="">
         </div>
         <form method="post">
             <div class="form-group">

@@ -10,7 +10,9 @@ if (!isset($_SESSION['current_question'])) {
     $_SESSION['current_question'] = 0;
     $_SESSION['Points'] = 0;
 }
-
+if (!empty($questions) && is_array($questions)) {
+    $questions_available = true;
+}
 require_once('jsonclass.php');
 
 $file_path = 'json/questions.json';
@@ -30,7 +32,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
         } else {
-            $message = "Mauvaise réponse. La réponse correcte était : " . $questions[$question_id]['answers'][$correct_answer];
+            $message = '<div class="alert alert-danger" role="alert">Mauvaise réponse. La réponse correcte était : ' . $questions[$question_id]['answers'][$correct_answer] . '</div>';
+
         }
     } elseif (isset($_POST['next_question'])) {
         $_SESSION['current_question']++;
@@ -57,9 +60,13 @@ include 'navbar.php';
 ?>
 <div class="containers text-center">
     <?php
+
+
+
     $question_id = $_SESSION['current_question'];
     if ($question_id < count($questions)) {
         $question = $questions[$question_id];
+
         ?>
         <div>
             <div class="question" style="padding: 50px;">
@@ -107,9 +114,9 @@ include 'navbar.php';
         header('Location: quiz_finish.php'); // Rediriger vers une page de confirmation de fin de quiz
         exit();
     }
+?>
 
 
-    ?>
 </div>
 
 </body>

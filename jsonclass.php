@@ -63,23 +63,4 @@ class JsonFileManager {
 
 }
 
-// Exemple d'utilisation :
-
-$file_path = 'data.json';
-$jsonFileManager = new JsonFileManager($file_path);
-
-// Lecture du fichier JSON
-$result = $jsonFileManager->read();
-
-
-// Écriture des données dans le fichier JSON
-$data = array('name' => 'John Doe', 'age' => 30, 'email' => 'john@example.com');
-$jsonFileManager->write($data);
-
-// Mise à jour des données dans le fichier JSON
-$data_to_update = array('age' => 35);
-$jsonFileManager->update($data_to_update);
-
-// Suppression du fichier JSON
-$jsonFileManager->delete();
 

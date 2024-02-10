@@ -9,8 +9,16 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link href="https://fonts.cdnfonts.com/css/nunito" rel="stylesheet">
 
-        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="css/index.css">
         <title>PorschaQuiz - Accueil</title>
+        
+	
+	<!icone onglet navigateeur >
+	<link rel="icon" type="image/png" href="images/logoporsche.png" />
+	
+        
+        
+        
 
 </head>
 <body data-bs-theme="dark">
@@ -45,7 +53,7 @@
                     <h2 id="Classement">Classement</h2>
                     <div class="d-flex align-items-center justify-content-center vertical-center" style="padding-top: 1.5em; max-height: 1000px">
                         <?php
-                        include 'function_classement.php';
+                        include_once'function_classement.php';
                         $nombreJoueurs = 8; // Définir le nombre de joueurs à afficher
                         echo afficherClassement($nombreJoueurs); // Affiche le tableau des joueurs
                         ?>
@@ -58,7 +66,7 @@
             <div class="col-md-6">
                 <!-- Contenu de la deuxième moitié de la page (Image de la Porsche) -->
                 <div class="text-center">
-                    <img style="border-radius: 12%; " class="w-100" src="/images/test.webp" alt="Porsche Image">
+                    <img style="border-radius: 12%; " class="w-100" src="images/test.webp" alt="Porsche Image">
                 </div>
             </div>
         </div>
@@ -68,7 +76,7 @@
             <div class="col-md-6">
                 <!-- Contenu de la deuxième moitié de la page (Image de la Porsche) -->
                 <div class="text-center">
-                    <img style="border-radius: 20px" class="w-100" src="/images/porsche911.png" alt="Porsche Image">
+                    <img style="border-radius: 20px" class="w-100" src="images/porsche911.png" alt="Porsche Image">
                 </div>
             </div>
             <div class="col-md-6 vertical-center">
@@ -99,20 +107,22 @@
         </div>
 
     </div>
-    <?php
+<?php
     include('footer.php');
-    session_start();
-    // Détruire toutes les données de la session
-    $_SESSION = array();
-
-    // Détruire la session
-    session_destroy();
-    header('index.php');
-
-
-    ?>
-
-    <script src="/script/index.js"></script>
-    <script src="/script/function.js"></script>
+?>
+    <script src="script/index.js"></script>
+    <script src="script/function.js"></script>
 </body>
 </html>
+<?php
+
+session_start();
+// Détruire toutes les données de la session
+$_SESSION = array();
+
+// Détruire la session
+session_destroy();
+
+
+
+?>

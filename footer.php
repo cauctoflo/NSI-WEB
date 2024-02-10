@@ -21,7 +21,7 @@
                     <p class="mb-0">Copyright 2024 - PorschaQuiz service de Florentin Fouligny</p>
                     <ul class="list-unstyled mb-0">
                         <li>Nos développeur: <a href="https://github.com/cauctoflo" class="text-light">Florentin Fouligny</a></li>
-                        <li>Github: <a href="https://github.com/cauctoflo/NSI" class="text-light">Clique ici</a></li>
+                        <li>Github: <a href="https://github.com/cauctoflo/NSI-WEB" class="text-light">Clique ici</a></li>
                     </ul>
                 </div>
             </div>

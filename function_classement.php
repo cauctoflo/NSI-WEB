@@ -16,7 +16,8 @@ function afficherClassement($nombreJoueurs) {
 
     // Vérifier si la lecture et le décodage ont réussi
     if ($players_data === null) {
-        return "Erreur lors de la lecture du fichier JSON des joueurs.";
+        return '<div class="alert alert-danger" role="alert">Aucun joueur enregistré actuellement</div>';
+
     }
 
     // Commencer la sortie du tableau HTML
@@ -56,6 +57,5 @@ function afficherClassement($nombreJoueurs) {
     return $table;
 }
 
-// Exemple d'utilisation :
 
 ?>

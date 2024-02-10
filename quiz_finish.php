@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Classement des joueurs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <title>Classement des joueurs</title>
     <link rel="stylesheet" href="css/quiz_finish.css">
 </head>
-<body >
-<div class="container mt-5" data-bs-theme="dark">
+<body data-bs-theme="dark">
+
+<?php
+include 'navbar.php';
+?>
+<div class="container mt-5" >
 
     <h1 class="text-center" style=" font-size: 50px; font-weight: bold;  padding: 50px; font-family: 'Nunito', sans-serif !important;">Classement des Joueurs</h1>
     <table class="table">
@@ -39,6 +42,7 @@
         require_once('jsonclass.php');
 
         $file_path = 'json/players.json';
+      
         $jsonFileManager = new JsonFileManager($file_path);
 
         // Lecture des données des joueurs
@@ -103,7 +107,7 @@
     ?>
     <p>Actualiser il y a <span id="tempsEcoule"></span> <a href="dashboard_viewclassement.php">Recharger</a></p>
 </div>
-<script src="/script/function.js"></script>
+<script src="script/function.js"></script>
 </body>
 </html>
 <?php
