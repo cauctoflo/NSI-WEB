@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "question": "Quelle est la capitale de la France ?",
+    "answers": ["Paris", "Londres", "Berlin", "Madrid"],
+    "correct_answer": "0"
+  },
+  {
+    "id": 2,
+    "question": "Quel est le plus grand océan du monde ?",
+    "answers": ["Atlantique", "Arctique", "Indien", "Pacifique"],
+    "correct_answer": "3"
+  },
+  {
+    "id": 3,
+    "question": "Combien de continents y a-t-il sur Terre ?",
+    "answers": ["3", "5", "7", "9"],
+    "correct_answer": "2"
+  }
+]

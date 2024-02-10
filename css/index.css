@@ -1,0 +1,142 @@
+/* Styles pour le tableau de classement */
+.table {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px #dc3545 solid ;
+    box-shadow: 0 0 20px #dc3545;
+}
+
+.table th, .table td {
+
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f8f9fa;
+
+}
+
+.table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.footer-dark {
+    background-color: #343a40;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer-dark p {
+    color: #fff;
+}
+
+.footer-dark img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.footer-dark ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-dark ul li {
+    margin-bottom: 10px;
+}
+
+.subfooter {
+    background-color: #2d3237;
+    padding: 20px 0;
+}
+
+.subfooter p {
+    margin: 0;
+}
+
+.menu-simple {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-simple li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.menu-simple a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-simple a:hover {
+    text-decoration: underline;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    max-width: 2000px;
+
+}
+.vertical-center {
+    min-height: 75%; /* Hauteur minimale pour le conteneur */
+    display: flex;
+    align-items: center; /* Alignement vertical */
+}
+.ml10 {
+    position: relative;
+    font-weight: 900;
+    font-size: 4em;
+
+}
+
+.ml10 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml10 .letter {
+    display: inline-block;
+
+    color: white;
+    line-height: 1em;
+    transform-origin: 0 0;
+    font-size: 2em;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.typing-effect {
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 0.5em;
+    position: relative;
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 2em;
+
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%{
+        background-color: white;
+    }
+    100% {
+        background-color: transparent;
+    }
+
+}

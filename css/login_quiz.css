@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Couleur de fond sombre */
+    color: #fff; /* Couleur du texte clair */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: #333; /* Couleur de fond du conteneur */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1); /* Ombre légère */
+    overflow: hidden;
+}
+
+.form-container {
+    padding: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff; /* Couleur du texte clair */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #666; /* Bordure plus foncée */
+    border-radius: 5px;
+    background-color: #444; /* Couleur de fond du champ */
+    color: #fff; /* Couleur du texte clair */
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff; /* Couleur du bouton */
+    color: #fff; /* Couleur du texte clair */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #0056b3; /* Couleur du bouton au survol */
+}
+
+.social-login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-login button {
+    margin-right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #fff; /* Couleur du texte clair */
+}
+
+.forgot-password {
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-center img {
+    display: block;
+    margin: 0 auto;
+}

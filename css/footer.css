@@ -1,0 +1,32 @@
+/* CSS personnalisé pour le footer */
+.footer-dark {
+    padding: 50px 0;
+    color: #f5f5f5; /* Couleur de texte plus vibrante */
+    background-color: #343a40; /* Nouvelle couleur pour le footer */
+}
+.footer-dark h5 {
+    margin-bottom: 30px;
+}
+.footer-dark img {
+    width: 128px;
+}
+.subfooter {
+    background-color: #282d33; /* Nouvelle couleur pour le subfooter */
+    color: #bbb; /* Couleur de texte plus claire */
+    padding: 20px 0;
+}
+.subfooter p {
+    margin-bottom: 0;
+}
+.subfooter ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+.subfooter ul li:last-child {
+    margin-right: 0;
+}
+.subfooter ul li a {
+    color: #ddd; /* Couleur de texte plus vibrante */
+    text-decoration: none;
+}
