@@ -2,120 +2,140 @@
   {
     "id": 1,
     "question": "Quelle est l'année de fondation de la marque Porsche ?",
+    "type": "radio",
     "answers": ["1931", "1945", "1950", "1960"],
     "correct_answer": "0"
   },
   {
     "id": 2,
     "question": "Qui est le fondateur de la marque Porsche ?",
+    "type": "check",
     "answers": ["Ferdinand Porsche", "Enzo Ferrari", "Henry Ford", "Karl Benz"],
     "correct_answer": "0"
   },
   {
     "id": 3,
     "question": "Quel est le modèle emblématique de Porsche introduit en 1963 ?",
+    "type": "dropdown",
     "answers": ["Porsche 911", "Porsche Cayenne", "Porsche Boxster", "Porsche Panamera"],
     "correct_answer": "0"
   },
   {
     "id": 4,
     "question": "Dans quelle ville se trouve le siège social de Porsche ?",
+    "type": "radio",
     "answers": ["Stuttgart", "Munich", "Berlin", "Francfort"],
     "correct_answer": "0"
   },
   {
     "id": 5,
     "question": "Quel est le modèle de Porsche qui a remporté plusieurs fois les 24 Heures du Mans ?",
+    "type": "check",
     "answers": ["Porsche 917", "Porsche 944", "Porsche 918 Spyder", "Porsche Carrera GT"],
     "correct_answer": "0"
   },
   {
     "id": 6,
     "question": "Quelle est la puissance de la Porsche 911 Turbo S de dernière génération ?",
+    "type": "check",
     "answers": ["650 chevaux", "700 chevaux", "750 chevaux", "800 chevaux"],
     "correct_answer": "1"
   },
   {
     "id": 7,
     "question": "Quelle est la vitesse maximale de la Porsche Taycan Turbo S ?",
+    "type": "radio",
     "answers": ["250 km/h", "280 km/h", "310 km/h", "350 km/h"],
     "correct_answer": "3"
   },
   {
     "id": 8,
     "question": "Quel est le premier modèle entièrement électrique de Porsche ?",
+    "type": "radio",
     "answers": ["Porsche Taycan", "Porsche Macan", "Porsche Cayenne", "Porsche Panamera"],
     "correct_answer": "0"
   },
   {
     "id": 9,
     "question": "Quelle est la cylindrée du moteur de la Porsche 911 Carrera S de dernière génération ?",
+    "type": "check",
     "answers": ["3,0 litres", "3,2 litres", "3,4 litres", "3,8 litres"],
     "correct_answer": "0"
   },
   {
     "id": 10,
     "question": "Quel est le nom du premier modèle Porsche à avoir été produit en série ?",
+    "type": "radio",
     "answers": ["Porsche 356", "Porsche 550 Spyder", "Porsche 911", "Porsche Boxster"],
     "correct_answer": "0"
   },
   {
     "id": 11,
     "question": "Quel est le nom du concept car électrique présenté par Porsche en 2019 ?",
+    "type": "dropdown",
     "answers": ["Porsche Mission E", "Porsche 918 Spyder", "Porsche Vision 920", "Porsche Panamera E-Hybrid"],
     "correct_answer": "0"
   },
   {
     "id": 12,
     "question": "Quelle est la transmission utilisée dans la Porsche 911 GT3 RS ?",
+    "type": "radio",
     "answers": ["Manuelle", "Automatique", "Séquentielle", "Double embrayage"],
     "correct_answer": "3"
   },
   {
     "id": 13,
     "question": "Quelle est la vitesse maximale de la Porsche 911 GT2 RS ?",
+    "type": "dropdown",
     "answers": ["330 km/h", "350 km/h", "370 km/h", "390 km/h"],
     "correct_answer": "3"
   },
   {
     "id": 14,
     "question": "Quelle est la couleur la plus emblématique des voitures de course Porsche ?",
+    "type": "radio",
     "answers": ["Blanc", "Noir", "Jaune", "Rouge"],
     "correct_answer": "2"
   },
   {
     "id": 15,
     "question": "Quelle est la particularité du moteur de la Porsche 911 GT3 ?",
+    "type": "radio",
     "answers": ["Atmosphérique", "Turbocompressé", "Bi-turbo", "Hybride"],
     "correct_answer": "0"
   },
   {
     "id": 16,
     "question": "Quelle est la première voiture de course Porsche à avoir remporté les 24 Heures du Mans ?",
+    "type": "radio",
     "answers": ["Porsche 917", "Porsche 956", "Porsche 962", "Porsche 911 GT1"],
     "correct_answer": "0"
   },
   {
     "id": 17,
     "question": "Quelle est la longueur totale de la Porsche 911 Turbo S de dernière génération ?",
+    "type": "radio",
     "answers": ["4,5 mètres", "4,7 mètres", "4,9 mètres", "5,1 mètres"],
     "correct_answer": "1"
   },
   {
     "id": 18,
     "question": "Quelle est la particularité du système de freinage de la Porsche 911 GT3 RS ?",
+    "type": "radio",
     "answers": ["Carbone-céramique", "Acier", "Aluminium", "Fonte"],
     "correct_answer": "0"
   },
   {
     "id": 19,
     "question": "Quel est le nom du SUV sportif de Porsche lancé en 2002 ?",
+    "type": "radio",
     "answers": ["Porsche Cayenne", "Porsche Macan", "Porsche Panamera", "Porsche Cayman"],
     "correct_answer": "0"
   },
   {
     "id": 20,
     "question": "Quelle est la cylindrée du moteur de la Porsche 918 Spyder ?",
+    "type": "radio",
     "answers": ["3,4 litres", "4,0 litres", "4,6 litres", "5,0 litres"],
     "correct_answer": "1"
   }
